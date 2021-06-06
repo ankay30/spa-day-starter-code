@@ -24,3 +24,32 @@ table {
             padding: 10px;
             text-align: center;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+.square-box{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    background: #4679BD;
+}
+.square-content{
+    position:  square;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color:pink;
+    text-align: center;
+    }
+    .errors{
+    color: red;
+}

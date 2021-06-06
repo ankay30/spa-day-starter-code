@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body>
+<div class="container body-content">
+    <h2 th:text="${#strings.capitalizeWords(title)}"></h2>
+    <a th:href="@{/}"> Click here for Service </a>
+</div>
+<hr/>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>UserName</th>
+        <th>Link</th>
+    </tr>
+    </thead>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.username}"></td>
+        <td>
+            <a th:href="@{/user/details/{id}(id=${user.id})}">Show Details</a>
+        </td>
+
+        <!--        <td>-->
+        <!--            <a th:href="@{/user/index/{id}(id=${item.id})}">Details</a>-->
+        <!--        </td>-->
+    </tr>
+</table>
+
+</body>
+</html>
