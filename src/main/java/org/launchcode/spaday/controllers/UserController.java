@@ -32,7 +32,6 @@ public class UserController {
             model.addAttribute("verify", verify);
             model.addAttribute("username", user.getUsername());
             model.addAttribute("email", user.getEmail());
-
             model.addAttribute("title","Welcome "+user.getUsername()+"!");
             model.addAttribute("users", UserData.getAll());
             return "user/index";
